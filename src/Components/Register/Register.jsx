@@ -19,11 +19,10 @@ const Register = () => {
   const navigate = useNavigate();
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(registerData);
 
     try {
       const response = await axios.post(
-        "https://b78d-2601-646-8b82-6960-59ad-aa19-18a-1c95.ngrok-free.app/api/customer/register",
+        "https://571f-2601-646-8b82-6960-dda3-8c5d-b539-617c.ngrok-free.app/api/customer/register",
         registerData
       );
       const data = await response.data;

@@ -21,7 +21,7 @@ const Login = () => {
     // console.log(loginData);
     try {
       const response = await axios.post(
-        "https://b78d-2601-646-8b82-6960-59ad-aa19-18a-1c95.ngrok-free.app/api/customer/authenticate",
+        "https://571f-2601-646-8b82-6960-dda3-8c5d-b539-617c.ngrok-free.app/api/customer/authenticate",
         loginData
       );
       const data = await response.data;

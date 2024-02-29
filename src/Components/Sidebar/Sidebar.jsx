@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -11,24 +12,24 @@ const Sidebar = () => {
           <div className="overflow-y-auto overflow-x-hidden flex-grow">
             <ul className="flex flex-col py-4 space-y-1">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/dashboard/create-account"
                   className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
                 >
                   <span className="ml-2 text-sm tracking-wide truncate">
                     Create Account
                   </span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/dashboard/add-beneficiary"
                   className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
                 >
                   <span className="ml-2 text-sm tracking-wide truncate">
                     Add Beneficiary
                   </span>
-                </a>
+                </Link>
               </li>
               <li>
                 <a
